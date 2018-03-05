@@ -1,4 +1,4 @@
 <button (click)="onToggle()">Display Details</button>
 <p *ngIf="display">secret Password: 'tuna'</p>
 <p>Logs:</p>
-<p *ngFor="let log of logs" [ngClass]="blue: ">{{ log }}</p>
+<p *ngFor="let log of logs; let i=index" [ngStyle]="{backgroundColor: getColor(i)}">{{ log }}</p>

@@ -18,4 +18,7 @@ export class DirectivesComponent implements OnInit {
   this.display = !this.display;
   this.logs.push(Date());
   }
+  getColor(i){
+    return i > 3 ? 'blue' : 'white';
+  }
 }
